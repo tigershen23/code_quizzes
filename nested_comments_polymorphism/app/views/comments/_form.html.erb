@@ -1,0 +1,4 @@
+<%= form_for [parent, @comment = Comment.new] do |f| %>
+  <%= f.text_area :body %><br />
+  <%= f.submit "Submit" %>
+<% end %>
