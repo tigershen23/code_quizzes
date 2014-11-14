@@ -1,7 +1,0 @@
-<div class="comment">
-  <%= comment.body %>
-  <%= link_to "Delete comment", article_comment_path(comment.commentable, comment), method: :delete %>
-  <%= render partial: 'comments/form', locals: { parent: comment } %>
-  <%= render partial: comment.comments %>
-  <br />
-</div>
